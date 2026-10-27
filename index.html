@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviso de Privacidad · Maetapp</title>
+<style>
+  :root { --bg:#FAF7F2; --surface:#FFFFFF; --ink:#1F1B17; --soft:#5C544A; --muted:#9A8F7F; --accent:#D97757; --border:#E8E0D2; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 20px; margin-bottom: 28px; }
+  .logo { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: var(--accent); color: #fff; font-size: 30px; font-weight: 700; margin-bottom: 14px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.3px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--ink); margin: 32px 0 8px; border-left: 3px solid var(--accent); padding-left: 10px; }
+  p, li { color: var(--soft); font-size: 15px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+  .tabla { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--soft); }
+  th { color: var(--ink); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; background: var(--surface); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1A1814; --surface:#26221C; --ink:#F5EFE2; --soft:#B8AE9C; --muted:#7A7062; --border:#3A342B; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">M</div>
+    <h1>Aviso de Privacidad</h1>
+    <p class="meta">Maetapp · Versión 1.5 · Última actualización: 25 de octubre de 2026</p>
+  </header>
+
+  <p>
+    En cumplimiento con la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares</strong>
+    (LFPDPPP, DOF 05-07-2010) y su Reglamento, así como con la <strong>Ley General de Protección de Datos Personales en
+    Posesión de Sujetos Obligados</strong> (LGPDPPSO), <strong>Maetapp</strong> pone a su disposición el presente Aviso de Privacidad.
+  </p>
+
+  <h2>I. Identidad del responsable</h2>
+  <div class="card">
+    <!-- Deben coincidir exactamente con src/data/responsable.ts (art. 16 fr. I LFPDPPP). -->
+    <p style="margin:0">
+      Responsable del tratamiento de los datos recabados a través de la aplicación <strong>Maetapp</strong>:<br><br>
+      <strong>Luis Eduardo Armendáriz del Río</strong><br>
+      Domicilio: Calle Convento de San Agustín #133, Fraccionamiento Villas del Monasterio,
+      C.P. 98613, Guadalupe, Zacatecas<br>
+      Contacto de privacidad: <a href="mailto:maetappsupport@gmail.com">maetappsupport@gmail.com</a>
+    </p>
+  </div>
+
+  <h2>II. Datos personales que se recaban</h2>
+  <p>Para la prestación del servicio se tratan las siguientes categorías de datos:</p>
+  <p><strong>A. Datos del docente (titular de la cuenta):</strong></p>
+  <ul>
+    <li>Nombre completo y correo electrónico.</li>
+    <li>Nombre de la institución educativa y, opcionalmente, Clave de Centro de Trabajo (CCT).</li>
+    <li>Identificador de autenticación (Google, Apple o credencial de correo).</li>
+  </ul>
+  <p><strong>B. Datos de alumnos (ingresados por el docente en ejercicio de sus funciones):</strong></p>
+  <ul>
+    <li>Nombre completo del alumno y nombre del tutor/madre/padre.</li>
+    <li>Registros de asistencia (presente, ausente, tarde, justificado).</li>
+    <li>Calificaciones por criterio de evaluación (escala 0–10, Acuerdo 696 SEP).</li>
+    <li>Registros de incidencias (conducta, salud o reconocimiento) y evidencias multimedia asociadas.</li>
+    <li>Ficha de emergencia declarada por el tutor: alergias y condiciones relevantes para el cuidado del alumno en la escuela.</li>
+    <li>Datos de contacto del tutor (teléfono, correo) y notas médicas, cuando el docente los captura.</li>
+    <li>Ficha descriptiva: valoración pedagógica que el docente redacta sobre el avance del alumno, sus necesidades de aprendizaje y los apoyos que requiere.</li>
+    <li>Contactos de emergencia: nombre, parentesco y teléfono de hasta dos personas que el propio tutor señala para que la escuela pueda localizarlas si él no contesta, y si autoriza que se le entregue al alumno.</li>
+  </ul>
+  <p><strong>C. Datos técnicos:</strong> identificador de publicidad del dispositivo (utilizado por Google AdMob; ver sección IX).</p>
+
+  <h2>III. Datos sensibles</h2>
+  <p>
+    Los registros de incidencias de tipo "Salud" y "Conducta", así como las notas médicas, constituyen
+    <strong>datos personales sensibles</strong> conforme al artículo 3, fracción VI de la LFPDPPP. Su tratamiento
+    requiere el consentimiento del titular o, tratándose de menores de edad, de su tutor o madre/padre de familia,
+    conforme al artículo 50 de la Ley General de los Derechos de Niñas, Niños y Adolescentes (LGDNNA).
+  </p>
+
+  <h2>IV. Finalidades del tratamiento</h2>
+  <p><strong>Primarias</strong> (necesarias para el servicio):</p>
+  <ul>
+    <li>Gestión del registro de asistencia conforme a lineamientos SEP.</li>
+    <li>Captura y resguardo de calificaciones en la escala oficial 0–10 (Acuerdo 696).</li>
+    <li>Registro de incidencias académicas y de conducta para la protección legal del docente.</li>
+    <li>Generación de reportes y boletas para padres de familia y autoridades escolares.</li>
+  </ul>
+  <p><strong>Secundarias</strong> (puede oponerse a ellas; ver sección VII):</p>
+  <ul>
+    <li>Mejora del servicio mediante análisis estadístico anonimizado de uso.</li>
+    <li>Envío de comunicaciones sobre actualizaciones y nuevas funcionalidades.</li>
+  </ul>
+
+  <h2>V. Transferencias de datos</h2>
+  <p>Maetapp podrá transferir datos personales sin requerir consentimiento en los supuestos del artículo 37 de la LFPDPPP:</p>
+  <ul>
+    <li>A autoridades educativas (SEP, USICAMM) cuando sea requerido por mandato legal o resolución judicial.</li>
+    <li>A proveedores de infraestructura tecnológica (almacenamiento en la nube: Supabase) bajo estándares equivalentes de protección.</li>
+  </ul>
+  <p>Maetapp <strong>no vende, alquila ni comercializa</strong> datos personales de docentes ni de alumnos a terceros con fines distintos al educativo.</p>
+
+  <p><strong>Dentro de la escuela.</strong> Cuando el docente decide sumar su grupo a una escuela registrada en Maetapp, y la dirección de esa escuela acepta la solicitud, los datos del grupo quedan al alcance de las siguientes personas y de nadie más:</p>
+  <ul>
+    <li>Docente titular del grupo: todo lo que él mismo registra.</li>
+    <li>Docentes de asignatura del mismo grupo: la lista de alumnos, la ficha descriptiva y la ficha de emergencia. No ven las calificaciones, actividades ni incidencias de los demás docentes.</li>
+    <li>Equipo de dirección del plantel (dirección y subdirecciones): los totales por grupo —asistencia, promedio y número de incidencias— y, además, la <strong>ficha descriptiva</strong>, la <strong>ficha de emergencia</strong> y los <strong>contactos de emergencia</strong> de cada alumno de la escuela.</li>
+  </ul>
+  <p>El acceso de la dirección se sustenta en el <em>Perfil, parámetros e indicadores para personal con funciones de dirección y de supervisión</em> (SEP/CNSPD), que le atribuye la responsabilidad de identificar lo que favorece o limita el aprendizaje de los alumnos del plantel para brindar apoyo con fines de mejora, y en el artículo 10, fracción II de la LFPDPPP, por tratarse de la ejecución del mismo servicio educativo.</p>
+  <p>Ese acceso está acotado al plantel: un directivo únicamente alcanza los datos de los grupos cuyo docente titular decidió sumarlos a su escuela y que él mismo aprobó. Las dos partes tienen que estar de acuerdo. El docente puede retirar su grupo en cualquier momento, y al hacerlo el acceso de la dirección termina.</p>
+  <p>Cada consulta que un directivo hace a una ficha descriptiva, a una ficha de emergencia o a los contactos queda registrada —quién, de qué alumno, qué consultó y cuándo— y ese registro está a disposición del docente titular del alumno dentro de la propia aplicación.</p>
+  <p>La dirección <strong>no</strong> accede a las calificaciones individuales, a las actividades ni al contenido de las incidencias de cada alumno. Esos registros siguen siendo del docente que los capturó.</p>
+  <p><strong>Contactos de emergencia.</strong> Se recaban con <strong>consentimiento expreso del tutor</strong>, que se guarda con fecha, porque se trata de datos de un tercero —un familiar o un vecino— que el tutor proporciona. Sin esa autorización no se guardan ni los ve nadie. Declarar que no hay nadie más a quién llamar es una respuesta válida y no requiere autorización, porque no revela ningún dato.</p>
+
+  <h2>VI. Plazo de conservación</h2>
+  <p>
+    En cumplimiento del principio de calidad (artículo 11 de la LFPDPPP y artículo 37 de su Reglamento), los datos se
+    cancelan automáticamente cuando dejan de ser necesarios para la finalidad que los originó. Maetapp aplica estos
+    plazos <strong>sin que el docente tenga que solicitarlo</strong>:
+  </p>
+  <div class="tabla">
+  <table>
+    <tr><th>Dato</th><th>Plazo</th><th>Qué ocurre al vencer</th></tr>
+    <tr>
+      <td><strong>Fotografías</strong> (avisos del mural y evidencias de trabajos)</td>
+      <td><strong>30 días</strong> desde su publicación</td>
+      <td>Se eliminan del dispositivo y del servidor, incluido el archivo de imagen. El aviso o el registro de entrega se conservan sin la imagen.</td>
+    </tr>
+    <tr>
+      <td><strong>Actividades</strong> (título, descripción y el material adjunto, incluidas fotografías de ejercicios o material de apoyo)</td>
+      <td>60 días después de cerrado el ciclo escolar</td>
+      <td>Se eliminan por completo. <strong>Solo se conserva la calificación</strong>, que forma parte del expediente académico.</td>
+    </tr>
+    <tr>
+      <td><strong>Calificaciones y expediente académico</strong></td>
+      <td><strong>5 años</strong> desde la captura de cada calificación</td>
+      <td>Plazo mínimo SEP para expedientes escolares. Se eliminan una por una, de modo que un grupo conserva las recientes aunque pierda las más antiguas.</td>
+    </tr>
+    <tr>
+      <td><strong>Incidencias y actas</strong></td>
+      <td><strong>5 años</strong> desde su registro</td>
+      <td>Se conservan por su valor probatorio y de trazabilidad. Después se eliminan.</td>
+    </tr>
+    <tr>
+      <td><strong>Fotografías de evidencia de una incidencia</strong></td>
+      <td><strong>5 años</strong>, igual que la incidencia</td>
+      <td>A diferencia de las demás fotografías, no se cancelan a los 30 días porque forman parte de la prueba: un acta de conducta o de salud sin la evidencia que la sustenta pierde el valor para el que se levantó. Se eliminan junto con la incidencia.</td>
+    </tr>
+  </table>
+  </div>
+  <p>Antes de eliminar una incidencia o un acta por vencimiento del plazo, la aplicación lo avisa con <strong>dos meses</strong> de anticipación y permite descargar el expediente completo en PDF. El aviso se cuenta en días en que la aplicación fue abierta, de modo que un periodo sin usarla no consume el plazo.</p>
+  <p>
+    Al dar de baja la cuenta, los datos se eliminan en un plazo máximo de 30 días hábiles, salvo aquellos cuya
+    conservación sea obligatoria por ley durante el plazo señalado arriba.
+  </p>
+
+  <h2>VII. Derechos ARCO</h2>
+  <p>
+    El titular tiene derecho a <strong>Acceder, Rectificar, Cancelar u Oponerse</strong> (derechos ARCO) al tratamiento de
+    sus datos, conforme al artículo 28 de la LFPDPPP. Para ejercerlos:
+  </p>
+  <ul>
+    <li>Envíe su solicitud a: <a href="mailto:maetappsupport@gmail.com">maetappsupport@gmail.com</a></li>
+    <li>Incluya: nombre completo, correo registrado, derecho que desea ejercer y su fundamento.</li>
+    <li>Recibirá respuesta en un plazo máximo de 20 días hábiles.</li>
+  </ul>
+  <p>Puede acudir al INAI si considera que su solicitud no fue atendida correctamente.</p>
+  <div class="card">
+    <p style="margin:0"><strong>Eliminar su cuenta y todos sus datos.</strong> Puede hacerlo usted mismo desde la
+    aplicación, en Ajustes → Eliminar mi cuenta, o solicitarlo por correo si ya la desinstaló.
+    Las instrucciones completas y el detalle de lo que se elimina están en
+    <a href="eliminar-cuenta.html">esta página</a>.</p>
+  </div>
+
+  <h2>VIII. Seguridad de los datos</h2>
+  <p>Maetapp implementa medidas de seguridad técnicas y administrativas, incluyendo:</p>
+  <ul>
+    <li>Cifrado en tránsito mediante TLS.</li>
+    <li>El teléfono y el correo del tutor que el <strong>docente</strong> anota en su lista, y las notas que escribe sobre un alumno, se cifran en el dispositivo mediante el almacén seguro del sistema operativo (Android Keystore) y <strong>no se almacenan en la nube</strong>. Distinto es el contacto de emergencia que el propio <strong>tutor</strong> declara desde su aplicación, descrito en el punto siguiente.</li>
+    <li>La <strong>ficha de emergencia</strong> y los <strong>contactos de emergencia</strong> —que el propio tutor declara— sí se almacenan en el servidor, porque los escribe en su dispositivo y debe leerlos el docente en el suyo. Se tratan con <strong>consentimiento expreso</strong> del tutor (art. 9 LFPDPPP), que se registra con fecha, y las reglas del servidor solo los muestran a quienes enumera la sección V. El tutor puede consultarlos, corregirlos o eliminarlos en cualquier momento desde la app, y al hacerlo dejan de estar al alcance de la escuela de inmediato.</li>
+    <li>Control de acceso a nivel de fila: cada docente solo puede ver los datos de sus propios grupos.</li>
+    <li>Respaldo automático del sistema deshabilitado para proteger la sesión del usuario.</li>
+    <li>Sello de integridad por cada registro de incidencia.</li>
+  </ul>
+
+  <h2>IX. Publicidad (Google AdMob)</h2>
+  <p>
+    Maetapp muestra anuncios mediante <strong>Google AdMob</strong> para sostener el plan gratuito. AdMob puede recabar y
+    procesar identificadores del dispositivo (como el identificador de publicidad de Android) conforme a la
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.
+    Estos anuncios <strong>no utilizan</strong> los datos académicos de alumnos ni de docentes almacenados en Maetapp.
+    Usted puede restablecer o limitar la publicidad personalizada desde los ajustes de su dispositivo Android
+    (Configuración → Google → Anuncios).
+  </p>
+
+  <h2>X. Menores de edad</h2>
+  <p>Los alumnos cuyos datos se gestionan en Maetapp son menores de edad. En cumplimiento de la LGDNNA:</p>
+  <ul>
+    <li>El docente debe obtener el consentimiento del tutor antes de registrar incidencias con datos de salud o conducta.</li>
+    <li>Las fotografías o videos de alumnos solo deben capturarse con consentimiento del tutor y con finalidad exclusivamente educativa.</li>
+    <li>Ningún dato de alumno puede utilizarse fuera del ámbito escolar ni compartirse con terceros sin autorización expresa.</li>
+    <li>El acceso del equipo de dirección a la ficha descriptiva, a la ficha de emergencia y a los contactos de emergencia se limita al personal directivo del propio plantel, con la finalidad de apoyar al alumno y al docente. Supervisión escolar, jefatura de sector y jefatura de enseñanza quedan excluidas por ser figuras externas al plantel.</li>
+    <li>El tutor puede consultar, corregir o borrar en cualquier momento, desde su propia aplicación, la ficha de emergencia y los contactos de su hijo. Borrarlos equivale a retirar el consentimiento.</li>
+  </ul>
+  <p>El público objetivo de la aplicación son <strong>docentes adultos</strong>; Maetapp no está dirigida a ni diseñada para su uso directo por menores de edad.</p>
+
+  <h2>XI. Cambios al aviso</h2>
+  <p>Cualquier modificación será notificada en la aplicación. La versión vigente siempre estará disponible en esta página y en la sección "Privacidad" dentro de los ajustes de la app.</p>
+
+  <h2>XII. Autoridad supervisora</h2>
+  <p>Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) · <a href="https://www.inai.org.mx" target="_blank" rel="noopener">www.inai.org.mx</a></p>
+
+  <footer>
+    © 2026 Maetapp · Contacto: <a href="mailto:maetappsupport@gmail.com">maetappsupport@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>

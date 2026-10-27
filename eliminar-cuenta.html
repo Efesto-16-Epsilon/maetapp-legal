@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eliminar cuenta · Maetapp</title>
+<style>
+  :root { --bg:#FAF7F2; --surface:#FFFFFF; --ink:#1F1B17; --soft:#5C544A; --muted:#9A8F7F; --accent:#D97757; --border:#E8E0D2; --danger:#B03A2E; --dangerBg:#FBEEEC; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 20px; margin-bottom: 28px; }
+  .logo { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: var(--accent); color: #fff; font-size: 30px; font-weight: 700; margin-bottom: 14px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.3px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--ink); margin: 32px 0 8px; border-left: 3px solid var(--accent); padding-left: 10px; }
+  p, li { color: var(--soft); font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 5px; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 12px 0; }
+  .alerta { background: var(--dangerBg); border: 1px solid var(--danger); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  .alerta strong { color: var(--danger); }
+  .pasos { counter-reset: p; list-style: none; padding: 0; }
+  .pasos li { counter-increment: p; position: relative; padding-left: 40px; margin-bottom: 14px; }
+  .pasos li::before {
+    content: counter(p); position: absolute; left: 0; top: 0;
+    width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;
+  }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1A1814; --surface:#26221C; --ink:#F5EFE2; --soft:#B8AE9C; --muted:#7A7062; --border:#3A342B; --danger:#E8877A; --dangerBg:#2C1A18; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">M</div>
+    <h1>Eliminar tu cuenta de Maetapp</h1>
+    <p class="meta">Maetapp · com.maetapp.app</p>
+  </header>
+
+  <p>
+    Puedes eliminar tu cuenta de Maetapp y toda la información asociada en cualquier momento.
+    Hay dos caminos: hacerlo tú mismo desde la aplicación, o solicitarlo por correo si ya no
+    la tienes instalada.
+  </p>
+
+  <h2>Desde la aplicación</h2>
+  <p>Es inmediato y no requiere que nadie intervenga:</p>
+  <ol class="pasos">
+    <li>Abre Maetapp e inicia sesión con la cuenta que quieres eliminar.</li>
+    <li>Entra a <strong>Ajustes</strong>, desde el menú inferior.</li>
+    <li>Baja hasta la sección <strong>Legal</strong> y toca <strong>Eliminar mi cuenta</strong>.</li>
+    <li>Lee lo que se va a borrar, escribe <strong>ELIMINAR</strong> para confirmar y toca el botón.</li>
+  </ol>
+  <p>La cuenta y sus datos se eliminan en ese momento, no en días.</p>
+
+  <h2>Por correo, si ya desinstalaste la app</h2>
+  <div class="card">
+    <p style="margin:0 0 10px">
+      Escribe a <a href="mailto:maetappsupport@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta">maetappsupport@gmail.com</a>
+      desde <strong>el mismo correo con el que te registraste</strong> e incluye:
+    </p>
+    <ul style="margin:0">
+      <li>Asunto: <em>Solicitud de eliminación de cuenta</em>.</li>
+      <li>Tu nombre completo tal como aparece en la cuenta.</li>
+      <li>Si eras docente o padre/tutor.</li>
+    </ul>
+  </div>
+  <p>
+    Pedimos que escribas desde el correo registrado porque es la forma de comprobar que la
+    cuenta es tuya. La solicitud se atiende en un plazo máximo de <strong>30 días hábiles</strong>,
+    aunque normalmente se resuelve mucho antes.
+  </p>
+
+  <h2>Qué se elimina</h2>
+  <p>Si tu cuenta es de <strong>docente</strong>:</p>
+  <ul>
+    <li>Tus grupos y la lista de alumnos de cada uno.</li>
+    <li>Calificaciones, asistencias, actividades y evidencias.</li>
+    <li>Incidencias y actas, incluidas las que llevan folio.</li>
+    <li>Avisos del mural y todas las fotografías que hayas publicado.</li>
+    <li>Los datos del tutor y las notas médicas guardados en tu dispositivo.</li>
+    <li>El vínculo con las cuentas de los padres, que dejarán de ver la información.</li>
+  </ul>
+  <p>Si tu cuenta es de <strong>padre, madre o tutor</strong>:</p>
+  <ul>
+    <li>El vínculo con tus hijos y el acceso a su información.</li>
+    <li>La ficha de salud que registraste: alergias, condiciones y las indicaciones
+        para una emergencia.</li>
+    <li>Los contactos de emergencia que diste, con sus nombres y teléfonos.</li>
+    <li>Los acuses de recibido que hayas marcado.</li>
+    <li>Tu autorización para el tratamiento de sus datos y fotografías.</li>
+  </ul>
+
+  <div class="alerta">
+    <p style="margin:0 0 8px"><strong>El borrado es permanente y no tiene deshacer.</strong></p>
+    <p style="margin:0">
+      Si eres docente y necesitas conservar incidencias o actas por su valor probatorio,
+      expórtalas en PDF <em>antes</em> de eliminar la cuenta. Una vez borradas no hay forma
+      de recuperarlas, ni siquiera desde el respaldo.
+    </p>
+  </div>
+
+  <h2>Qué se conserva</h2>
+  <p>
+    Ningún dato tuyo se conserva después del borrado. La única excepción sería algún dato
+    cuya conservación imponga expresamente la ley, que se guardaría por el plazo señalado en
+    esa norma y únicamente para ese fin. Los plazos están detallados en el
+    <a href="index.html">aviso de privacidad</a>, sección VI.
+  </p>
+
+  <h2>Borrar solo una parte, sin eliminar la cuenta</h2>
+  <p>
+    No hace falta borrarlo todo para quitar algo. Desde la propia aplicación puedes
+    eliminar lo que ya no quieras que exista y conservar tu cuenta:
+  </p>
+  <ul>
+    <li><strong>Docentes:</strong> borrar un grupo con toda su información, quitar una
+        fotografía publicada, dar de baja a un alumno o retirarle el acceso a un tutor.</li>
+    <li><strong>Padres, madres y tutores:</strong> retirar la autorización de fotografías
+        desde la pantalla de tu hijo, o modificar y vaciar la ficha de salud y los
+        contactos de emergencia que registraste.</li>
+  </ul>
+  <p>
+    Si prefieres que lo hagamos nosotros, escribe a
+    <a href="mailto:maetappsupport@gmail.com">maetappsupport@gmail.com</a> desde tu correo
+    registrado diciendo qué quieres que se borre. Aplica el mismo plazo máximo de 30 días
+    hábiles.
+  </p>
+
+  <h2>¿Solo quieres dejar de usarla?</h2>
+  <p>
+    No hace falta eliminar la cuenta. Puedes cerrar sesión desde Ajustes o desinstalar la
+    aplicación: tus datos se quedan como estaban y los recuperas cuando vuelvas a entrar.
+    Eliminar la cuenta es para cuando quieres que la información desaparezca.
+  </p>
+
+  <footer>
+    © 2026 Maetapp · Contacto: <a href="mailto:maetappsupport@gmail.com">maetappsupport@gmail.com</a> ·
+    <a href="index.html">Aviso de privacidad</a>
+  </footer>
+</div>
+</body>
+</html>
