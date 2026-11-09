@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Unirme a un grupo · Maetapp</title>
+<style>
+  :root { --tinta:#1F1B17; --suave:#5C544A; --tenue:#9A8F7F;
+          --acento:#D97757; --fondo:#FAF7F2; --papel:#FFFFFF; --borde:#E8E0D2; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:24px 16px; background:var(--fondo); color:var(--tinta);
+         font-family:-apple-system,'Segoe UI',Roboto,sans-serif; line-height:1.55; }
+  .caja { max-width:460px; margin:0 auto; background:var(--papel);
+          border:1px solid var(--borde); border-radius:16px; padding:26px 22px; }
+  h1 { font-size:21px; margin:0 0 4px; letter-spacing:-0.3px; }
+  .sub { color:var(--suave); font-size:14px; margin:0 0 20px; }
+  .codigo { font-size:30px; letter-spacing:6px; font-weight:700; text-align:center;
+            color:var(--acento); background:#FDF3EF; border:1.5px solid var(--acento);
+            border-radius:12px; padding:16px 10px; margin:0 0 18px; }
+  .btn { display:block; text-align:center; text-decoration:none; font-weight:600;
+         border-radius:12px; padding:15px 14px; margin-bottom:10px; font-size:15px; }
+  .primario { background:var(--acento); color:#fff; }
+  .secundario { background:transparent; color:var(--tinta); border:1px solid var(--borde); }
+  .nota { font-size:12.5px; color:var(--tenue); margin-top:16px; }
+  ol { margin:10px 0 0; padding-left:20px; font-size:13.5px; color:var(--suave); }
+  li { margin-bottom:5px; }
+</style>
+</head>
+<body>
+<div class="caja">
+  <h1>Te invitaron a un grupo</h1>
+  <p class="sub">Maetapp · acceso para docentes</p>
+
+  <div class="codigo" id="codigo">—</div>
+
+  <a class="btn primario" id="abrir" href="#">Abrir en Maetapp</a>
+  <a class="btn secundario"
+     href="https://play.google.com/store/apps/details?id=com.maetapp.app">
+    Todavía no tengo la app
+  </a>
+
+  <p class="nota">
+    Si el botón no hace nada, abre Maetapp y entra a
+    <strong>Unirme a un grupo</strong>. Ahí escribe el código de arriba.
+  </p>
+  <ol id="pasos" hidden>
+    <li>Instala Maetapp.</li>
+    <li>Entra con tu cuenta de docente.</li>
+    <li>Menú → Unirme a un grupo → escribe el código.</li>
+  </ol>
+</div>
+
+<script>
+  // El código viaja en la liga. Esta página existe solo para el rato en que
+  // Android todavía no verificó el dominio: una vez verificado, la liga abre
+  // la app directamente y nadie llega hasta aquí.
+  var p = new URLSearchParams(location.search);
+  var c = (p.get('codigo') || p.get('c') || '').trim().toUpperCase();
+
+  if (c) {
+    document.getElementById('codigo').textContent = c;
+    document.getElementById('abrir').href = 'maetapp://unir?codigo=' + encodeURIComponent(c);
+  } else {
+    document.getElementById('codigo').textContent = 'Sin código';
+    document.getElementById('abrir').style.display = 'none';
+    document.getElementById('pasos').hidden = false;
+  }
+</script>
+</body>
+</html>
