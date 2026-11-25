@@ -72,11 +72,18 @@
     // En la liga va con punto; se muestra como lo escribe el maestro: 3A·SH42.
     document.getElementById('codigo').textContent = c.replace(/[.\-]/g, '·');
     var ruta = 'vincular?codigo=' + encodeURIComponent(c);
+    // La tienda con el código: Play se lo pasa a la app la primera vez que se
+    // abre después de instalarla, y el papá ya no lo escribe.
+    var tiendaConCodigo = tienda + '&referrer=' + encodeURIComponent('codigo=' + c);
+    document.getElementById('tienda').href = tiendaConCodigo;
     var abrir = 'maetapp://' + ruta;
-    // En Android, «intent:» abre la app si está instalada y, si no, la tienda.
     if (/Android/i.test(navigator.userAgent)) {
+      // «intent:» abre la app si está instalada y, si no, la tienda.
       abrir = 'intent://' + ruta + '#Intent;scheme=maetapp;package=com.maetapp.app;'
-        + 'S.browser_fallback_url=' + encodeURIComponent(tienda) + ';end';
+        + 'S.browser_fallback_url=' + encodeURIComponent(tiendaConCodigo) + ';end';
+      // Sin esperar el toque: la liga es para agregar al niño, no para leer
+      // esta página. Si el navegador no lo permite, queda el botón.
+      setTimeout(function () { location.href = abrir; }, 300);
     }
     document.getElementById('abrir').href = abrir;
   } else {
